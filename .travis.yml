@@ -24,7 +24,7 @@ script:
   # we'd like to try and do the diffing before travis_clean & setup.
   # This will run the tests exactly as you would in your own vm:
   # ./toolset/run-tests.py --mode verify --test (all the valid tests for this framework)
-  - then tfb --mode verify --test-dir "$TESTDIR"
+  - tfb --mode verify --test-dir "$TESTDIR"
   # - tfb --mode verify --test
 
 cache:
