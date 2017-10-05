@@ -11,6 +11,8 @@ python:
 env:
   matrix:
     - "TESTDIR=PHP/cakephp"
+    - "TESTDIR=PHP/codeigniter"
+    - "TESTDIR=PHP/symfony2"
 
 before_script:
 
