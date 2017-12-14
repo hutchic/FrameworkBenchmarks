@@ -4,15 +4,17 @@
 
 sudo: required
 dist: trusty
+group: deprecated-2017Q2
 language: generic
 python:
   - "2.7"
+services:
+  - docker
 
 env:
   matrix:
     - "TESTDIR=PHP/cakephp"
     - "TESTDIR=PHP/codeigniter"
-    - "TESTDIR=PHP/symfony2"
 
 before_script:
   - source ./toolset/travis/travis_clean.sh
